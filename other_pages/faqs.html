@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <title>Jungle Rush Community</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jungle Rush, JRC, JR, Jungle Rush Community, Roblox Vietnam War Simulator">
+    <meta name="keywords" content="Jungle Rush, JRC, JR, Jungle Rush Community, Roblox Vietnam War Simulator">
+    <meta name="author" content="Jungle Rush Community">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta http-equiv="refresh" content="1000">
+    <link rel="stylesheet" href="./css/faqs.css">
+    <link rel="icon" href="https://codehs.com/uploads/4bba13c55ddfa51212e39c983f8951b4" type="image/png"> <!-- For PNG format -->
+
+<!-- Modal -->
+<center>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="checkbox-container">
+      <input type="checkbox" id="acceptTerms">
+      <label class="checkmark" for="acceptTerms"></label>
+      <label for="acceptTerms">I have read and accept the Terms of Service and Privacy Policy: <a href="https://codehs.com/uploads/66cd77277b5c8e3f1bcd28d6e1b09ca0" target="_blank">Click Me</a></label>
+    </div>
+    <button id="acceptButton">Continue</button>
+  </div>
+</div>
+</center>
+<script>
+var modal = document.getElementById("myModal");
+var acceptButton = document.getElementById("acceptButton");
+var acceptCheckbox = document.getElementById("acceptTerms");
+
+function checkAcceptanceStatus() {
+  return document.cookie.includes("accepted=true");
+}
+
+function setAcceptanceCookie() {
+  document.cookie = "accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+}
+
+function openModal() {
+  if (!checkAcceptanceStatus()) {
+    modal.style.display = "block";
+  }
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+acceptButton.onclick = function() {
+  if (acceptCheckbox.checked) {
+    setAcceptanceCookie();
+    closeModal();
+  } else {
+    alert("Please accept the Terms and Conditions / Privacy Policy to continue.");
+  }
+}
+
+window.onload = function() {
+  openModal();
+};
+</script>
+<!-- End Modal -->
+
+    <nav id="navbar">
+        
+        <button type="button" class="image-button" onclick="window.location.href='/index.html'">
+	    <span class="group-button-icon"></span>
+        </button>
+        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/groups/32903399/ComputerWiz541s-Minions#!/about'">
+	    <span class="group-button-text">Group</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/contact.html'">
+	    <span class="group-button-text">Contact Us</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.open('/other_pages/appeals.html', '_blank')">
+	    <span class="group-button-text">Appeals</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/jtt.html'">
+	    <span class="group-button-text">Join The Team</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/faqs.html'">
+	    <span class="group-button-text">FAQs</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/lu.html'">
+	    <span class="group-button-text">Halloween Update</span>
+        </button>
+        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/games/14376464220/Jungle-Rush'">
+	    <span class="group-button-text">Play Now</span>
+        </button>
+        
+    </nav>
+    
+<body>
+    <center>
+    <div class="faq-container">
+        <div class="faq">
+            <div class="question">What is Jungle Rush all about?</div>
+            <div class="answer">Jungle Rush is a ultra realistic first person shooter based around the Vietnam War.</div>
+        </div>
+        <div class="faq">
+            <div class="question">How can I contact customer support for assistance for a gaming issue?</div>
+            <div class="answer">Navigate to the "Contact Us" page and fill out the form.</div>
+        </div>
+        <div class="faq">
+            <div class="question">How can I report bugs or issues with the a game or the website?</div>
+            <div class="answer">Navigate to the "Contact Us" page and fill out the form.</div>
+        </div>
+        <div class="faq">
+            <div class="question">What devices and/or platforms are supported by this website and JRC games?</div>
+            <div class="answer">Curently the website only supports devices with medium to large screens, while JRC games need a device with a keyboard and a mouse.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Is registration free, or do I have to pay for an account?</div>
+            <div class="answer">No, the only available purchases are gamepasses for JRC games to get exclusive weapons, tools, and clothing.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Are there special features for content creators?</div>
+            <div class="answer">Yes, there are currently no requirements for content creators to get special features, just contact me at computerwiz541@gmail.com. On the otherhand, there are some requirements for contect creators to make a video about JRC games. These include showing the name of the game, and putting a link to the  game in the description.</div>
+        </div>
+        <div class="faq">
+            <div class="question">How can I become a moderator, admin, or developer?</div>
+            <div class="answer">To become a moderator navigate to the "Join The Team" page and fill out the, admins are selected my trusted moderators in our community, and to become a developer contact me at computerwiz541@gmail.com.</div>
+        </div>
+    </div>
+    </center>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll('.faq');
+
+    faqItems.forEach((item) => {
+        const question = item.querySelector('.question');
+        const answer = item.querySelector('.answer');
+
+        question.addEventListener('click', () => {
+            answer.classList.toggle('active');
+        });
+    });
+});
+
+</script>
+</body>
+</html>

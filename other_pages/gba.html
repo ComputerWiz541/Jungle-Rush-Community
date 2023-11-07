@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <title>Jungle Rush Community</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta http-equiv="refresh" content="1000">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" href="https://codehs.com/uploads/4bba13c55ddfa51212e39c983f8951b4" type="image/png"> <!-- For PNG format -->
+
+<!-- Modal -->
+<center>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="checkbox-container">
+      <input type="checkbox" id="acceptTerms">
+      <label class="checkmark" for="acceptTerms"></label>
+      <label for="acceptTerms">I have read and accept the Terms of Service and Privacy Policy: <a href="https://codehs.com/uploads/66cd77277b5c8e3f1bcd28d6e1b09ca0" target="_blank">Click Me</a></label>
+    </div>
+    <button id="acceptButton">Continue</button>
+  </div>
+</div>
+</center>
+<script>
+var modal = document.getElementById("myModal");
+var acceptButton = document.getElementById("acceptButton");
+var acceptCheckbox = document.getElementById("acceptTerms");
+
+function checkAcceptanceStatus() {
+  return document.cookie.includes("accepted=true");
+}
+
+function setAcceptanceCookie() {
+  document.cookie = "accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+}
+
+function openModal() {
+  if (!checkAcceptanceStatus()) {
+    modal.style.display = "block";
+  }
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+acceptButton.onclick = function() {
+  if (acceptCheckbox.checked) {
+    setAcceptanceCookie();
+    closeModal();
+  } else {
+    alert("Please accept the Terms and Conditions / Privacy Policy to continue.");
+  }
+}
+
+window.onload = function() {
+  openModal();
+};
+</script>
+<!-- End Modal -->
+
+    <nav id="navbar">
+        
+        <button type="button" class="image-button" onclick="window.location.href='/index.html'">
+	    <span class="group-button-icon"></span>
+        </button>
+        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/groups/32903399/ComputerWiz541s-Minions#!/about'">
+	    <span class="group-button-text">Group</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/contact.html'">
+	    <span class="group-button-text">Contact Us</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/appeals.html'">
+	    <span class="group-button-text">Appeals</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/jtt.html'">
+	    <span class="group-button-text">Join The Team</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/faqs.html'">
+	    <span class="group-button-text">FAQs</span>
+        </button>
+        /
+        <button type="button" class="button" onclick="window.location.href='/other_pages/lu.html'">
+	    <span class="group-button-text">Halloween Update</span>
+        </button>
+        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/games/14376464220/Jungle-Rush'">
+	    <span class="group-button-text">Play Now</span>
+        </button>
+        
+    </nav>
+
+    <center>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHQfBwd9aWYBcxxq7O8XeaqbM-eck7ktIBihFsqm7F8tIL4w/viewform?embedded=true" width="640" height="1909" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </center>
+</html>
