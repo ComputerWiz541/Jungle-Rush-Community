@@ -1,418 +1,6 @@
-.button {
-	color: #777777;
-	font-size: 16px;
-	border-radius: 5px;
-	border: solid 0px #fafafa;
-	padding: 10px 18px;
-	text-shadow: 0px 0px 0px #fafafa;
-	box-shadow: inset 0px 0px 0px 0px #fafafa;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	font-family: Arial;
-	background: #fafafa;
-	display: inline-block;
-	vertical-align: middle;
+::-webkit-scrollbar {
+    width: 0em; /* Set the width of the scrollbar to zero */
 }
-.button:hover {
-	background: #dfdfdf;
-}
-.group-button-text {
-	position: relative;
-	display: inline-block;
-
-}
-
-
-
-
-.image-button {
-	color: #777777;
-	font-size: 16px;
-	border-radius: 5px;
-	border: solid 0px #fafafa;
-	padding: 10px 18px;
-	text-shadow: 0px 0px 0px #fafafa;
-	box-shadow: inset 1px 1px 2px 0px #fafafa;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	font-family: Arial;
-	background: #fafafa;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-
-
-
-.prof-image-button {
-	color: #777777;
-	font-size: 16px;
-	border-radius: 5px;
-	border: solid 0px #fafafa;
-	padding: 10px 18px;
-	text-shadow: 0px 0px 0px #fafafa;
-	box-shadow: inset 1px 1px 2px 0px #fafafa;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	font-family: Arial;
-	background: #fafafa;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-
-
-
-.group-button-icon {
-    width: 60px;
-    height: 60px;
-    background-image: url('https://codehs.com/uploads/4bba13c55ddfa51212e39c983f8951b4');
-    background-size: cover;
-    display: inline-block;
-}
-
-
-
-
-.prof-button-icon {
-    width: 30px;
-    height: 30px;
-    background-image: url('https://codehs.com/uploads/7d1f9c987b95b1a1cbbe7510fe5f72b7');
-    background-size: cover;
-    display: inline-block;
-}
-
-
-
-
-html {
-    background-color: #fafafa;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-
-
-
-h1 {
-    background-image: url("https://codehs.com/uploads/26d338282a4313482b579cad6d7bf32b");
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    font-size: 50px;
-    color: white;
-    background-size: cover;
-    background-position: center center;
-    }
-
-
-
-
-h2 {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    font-size: 40px;
-}
-
-
-
-
-
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.button:last-child {
-    margin-left: auto;
-    background-color: black;
-    color: white;
-}
-.team-member {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    vertical-align: top; /* Align the top edges of the inline-block elements */
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    display: block; /* Make sure the images are treated as block elements */
-    margin: 0 auto; /* Center the images horizontally */
-}
-
-.team-member p {
-    font-weight: bold;
-    font-family: Arial;
-}
-
-
-
-
-
-.hello {
-    color: white;
-    font-size: 20px;
-    font-family: Arial;
-}
-
-
-
-
-.helloo {
-    color: #959595; /*Maybe try #bbbbbb*/
-    font-size: 20px;
-    font-family: Arial;
-    font-weight: 20;
-}
-
-
-
-
-#roles {
-    color: #5d90fd;
-}
-
-
-
-
-.play2-button {
-	color: #000000;
-	font-size: 16px;
-	border-radius: 5px;
-	border: solid 1px #000000;
-	padding: 10px 18px;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	font-family: Arial;
-	background: #ffffff;
-	display: inline-block;
-	vertical-align: middle;
-}
-.play2-button:hover {
-	background: #b8b8b8;
-}
-.play2-button-text {
-	position: relative;
-	display: inline-block;
-
-}
-
-
-
-
-.watch-button {
-	color: #000000;
-	font-size: 16px;
-	border-radius: 5px;
-	border: solid 1px #000000;
-	padding: 10px 18px;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	font-family: Arial;
-	background: #ffffff;
-	display: inline-block;
-	vertical-align: middle;
-}
-.watch-button:hover {
-	background: #b8b8b8;
-}
-.watch-button-text {
-	position: relative;
-	display: inline-block;
-
-}
-
-
-
-
-
-
-
-
-
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #fafafa;
-  padding: 20px;
-  font-size: 20px;
-  font-family: Arial;
-  text-align: center;
-  color: #777777;
-}
-
-
-
-
-
-
-
-
-
-.alert {
-  padding: 20px;
-  background-color: #fafafa;
-  color: #777777;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  text-align: center;
-  margin: 0;
-  font-family: Arial;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: #777777;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.btn {
-  border: none;
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #282A35;
-  color: white;
-  position: relative;
-  animation: wiggle 2s linear infinite;
-}
-
-/* Keyframes */
-@keyframes wiggle {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%, 100% {
-    transform: rotateZ(0);
-  }
-}
-
-
-
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ribbon {
-  width: 60px;
-  font-size: 14px;
-  padding: 4px;
-  position: absolute;
-  right: -25px;
-  top: -12px;
-  text-align: center;
-  border-radius: 25px;
-  transform: rotate(20deg);
-  background-color: #ff9800;
-  color: white;
-}
-
-
-
 
 
 
@@ -426,7 +14,7 @@ div.sticky {
 /* Atom Card*/
 * {box-sizing: border-box}
 
-.container {
+.staff_container {
   width: 100%;
   background-color: #ddd;
 }
@@ -532,7 +120,7 @@ body {
 /* Me Card*/
 * {box-sizing: border-box}
 
-.container {
+.staff_container {
   width: 100%;
   background-color: #ddd;
 }
@@ -632,7 +220,7 @@ body {
 /* Aus Card*/
 * {box-sizing: border-box}
 
-.container {
+.staff_container {
   width: 100%;
   background-color: #ddd;
 }
@@ -745,162 +333,81 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-.loader {
-            background: #000;
-            background: radial-gradient(#222, #000);
-            bottom: 0;
-            left: 0;
-            overflow: hidden;
-            position: fixed;
-            right: 0;
-            top: 0;
-            z-index: 99999;
+body {
+            background-color: #373c3f;
+            color: #dcdcdc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        .loader-inner {
-            bottom: 0;
-            height: 60px;
-            left: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100px;
+        header {
+            background-color: #262a2c;
+            padding: 20px 0;
+            text-align: center;
         }
 
-        .loader-line-wrap {
-            animation: spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
-            box-sizing: border-box;
-            height: 50px;
-            left: 0;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            transform-origin: 50% 100%;
-            width: 100px;
+        nav {
+            margin-top: 20px;
+            text-align: center;
         }
 
-        .loader-line {
-            border: 4px solid transparent;
-            border-radius: 100%;
-            box-sizing: border-box;
-            height: 100px;
-            left: 0;
+        nav a {
+            color: #dcdcdc;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .hero-section {
+            position: relative;
+            background-image: url('https://codehs.com/uploads/26d338282a4313482b579cad6d7bf32b');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 650px 0;
+            height: 100vh;
+        }
+
+        .hero-text {
+            color: #dcdcdc;
+            font-size: 48px;
+            opacity: 0;
+            transform: translateY(-80%);
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-80%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            max-width: 960px;
             margin: 0 auto;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100px;
+            padding: 20px;
+            text-align: center;
         }
 
-        .loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
-        .loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
-        .loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
-        .loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
-        .loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
-
-        .loader-line-wrap:nth-child(1) .loader-line {
-            border-color: hsl(0, 80%, 60%);
-            height: 90px;
-            width: 90px;
-            top: 7px;
-        }
-
-        .loader-line-wrap:nth-child(2) .loader-line {
-            border-color: hsl(60, 80%, 60%);
-            height: 76px;
-            width: 76px;
-            top: 14px;
-        }
-
-        .loader-line-wrap:nth-child(3) .loader-line {
-            border-color: hsl(120, 80%, 60%);
-            height: 62px;
-            width: 62px;
-            top: 21px;
-        }
-
-        .loader-line-wrap:nth-child(4) .loader-line {
-            border-color: hsl(180, 80%, 60%);
-            height: 48px;
-            width: 48px;
-            top: 28px;
-        }
-
-        .loader-line-wrap:nth-child(5) .loader-line {
-            border-color: hsl(240, 80%, 60%);
-            height: 34px;
-            width: 34px;
-            top: 35px;
-        }
-
-        @keyframes spin {
-            0%, 15% {
-                transform: rotate(0);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        #loader-wrapper {
-            position: fixed;
+        footer {
+            background-color: #262a2c;
+            color: #dcdcdc;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        #content {
-            /* Your content styles here */
-            margin: 50px;
         }
         
         
@@ -914,24 +421,6 @@ body {
         
         
         
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
 /* Privacy */
 .modal {
   display: none;
@@ -1041,3 +530,36 @@ body {
 #acceptButton:hover {
 	background: #dfdfdf;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
