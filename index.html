@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<head>
     <title>Jungle Rush Community</title>
     <meta charset="UTF-8">
     <html lang="en">
@@ -8,51 +8,14 @@
     <meta name="author" content="Jungle Rush Community">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     <meta http-equiv="refresh" content="1000">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="icon" href="https://codehs.com/uploads/4bba13c55ddfa51212e39c983f8951b4" type="image/png"> <!-- For PNG format -->
-    <script src="/js/index.js"></script>
-
-
-
-
-
-
-
-
-
     
     
+
 
 <body>
-    <!-- Loader -->
-    <div id="loader-wrapper">
-        <div class="loader">
-            <div class="loader-inner">
-                <div class="loader-line-wrap">
-                    <div class="loader-line"></div>
-                </div>
-                <div class="loader-line-wrap">
-                    <div class="loader-line"></div>
-                </div>
-                <div class="loader-line-wrap">
-                    <div class="loader-line"></div>
-                </div>
-                <div class="loader-line-wrap">
-                    <div class="loader-line"></div>
-                </div>
-                <div class="loader-line-wrap">
-                    <div class="loader-line"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-
-
-
-
-
-
 <!-- Modal -->
 <center>
 <div id="myModal" class="modal">
@@ -82,6 +45,13 @@ function setAcceptanceCookie() {
 function openModal() {
   if (!checkAcceptanceStatus()) {
     modal.style.display = "block";
+  } else {
+    // Scroll the page down by 475 pixels
+    var targetPosition = window.scrollY + 475;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
   }
 }
 
@@ -93,6 +63,12 @@ acceptButton.onclick = function() {
   if (acceptCheckbox.checked) {
     setAcceptanceCookie();
     closeModal();
+    // Scroll the page down by 475 pixels after accepting the terms
+    var targetPosition = window.scrollY + 475;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
   } else {
     alert("Please accept the Terms and Conditions / Privacy Policy to continue.");
   }
@@ -107,111 +83,56 @@ window.onload = function() {
 
 
 
-
-    <nav id="navbar">
-        
-        <button type="button" class="image-button" onclick="window.location.href='/index.html'">
-	    <span class="group-button-icon"></span>
-        </button>
-        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/groups/32903399/ComputerWiz541s-Minions#!/about'">
-	    <span class="group-button-text">Group</span>
-        </button>
-        /
-        <button type="button" class="button" onclick="window.location.href='/other_pages/contact.html'">
-	    <span class="group-button-text">Contact Us</span>
-        </button>
-        /
-        <button type="button" class="button" onclick="window.open('/other_pages/appeals.html', '_blank')">
-	    <span class="group-button-text">Appeals</span>
-        </button>
-        /
-        <button type="button" class="button" onclick="window.location.href='/other_pages/jtt.html'">
-	    <span class="group-button-text">Join The Team</span>
-        </button>
-        /
-        <button type="button" class="button" onclick="window.location.href='/other_pages/faqs.html'">
-	    <span class="group-button-text">FAQs</span>
-        </button>
-        /
-        <button type="button" class="button" onclick="window.location.href='/other_pages/lu.html'">
-	    <span class="group-button-text">Halloween Update</span>
-        </button>
-        <button type="button" class="button" onclick="window.location.href='https://www.roblox.com/games/14376464220/Jungle-Rush'">
-	    <span class="group-button-text">Play Now</span>
-        </button>
-        
-    </nav>
-
     
-    <!-- 
-    <h2>
-        <button>
-		<nav>
-            <a href="n/a.html">Wip</a>
+</head>
+
+<body>
+    <header>
+        <h1>Jungle Rush Community</h1>
+        <nav>
+            <a href="#home" >Home</a>
+            <a href="#about">About</a>
+            <a href="#group" onclick="window.open('https://www.roblox.com/groups/32903399/ComputerWiz541s-Minions#!/about', '_blank')">Group</a>
+            <!--<a href="#gallery">Gallery</a>-->
+            <a href="#contact" onclick="window.location.href='./other_pages/contact.html'">Contact Us</a>
+            <a href="#appeals" onclick="window.open('./other_pages/appeals.html', '_blank')"   >Appeals</a>
+            <!--<a href="#about" onclick="window.location.href='./other_pages/jtt.html'">Join The Team</a>-->
+            <a href="#faqs" onclick="window.location.href='./other_pages/faqs.html'">FAQs</a>
+            <a href="#play" onclick="window.location.href='https://www.roblox.com/games/14376464220/Jungle-Rush'">Play Now</a>
         </nav>
-		</button>
-    </h2>
-    
-    
-    
-    
-    <script src="script.js" defer></script>
-    -->
+    </header>
 
-    <!--Below Meet The Team It Will Says, "We started (start date) -->
-    
-    
-    
-<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Major Update!</strong> The Jungle Rush gun system has been completely remade! & Jungle Rush has finally recieved a capture the point system!
-</div>
-    
-    
-    
-    
-    
-    <body>
-         <h1>
-            <br><br><br>
-            <center>Experience The Incredible</center>
-            <center>Vietnam War Simulator</center>
-            <center><p class="hello">Join the Vietcong or the South Vietnamese and lead your side to victory.</p></center>
-            <br><br>
-    <center>
-    <div id="overlay">
-      <div id="text">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uOZYDq7WeBA?si=BF937FPEQ2OeAt7t"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <button class="btn" onclick="off()">Close</button>
-      </div>
+    <div id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to the Battlefield</h1>
+            <p>Experience the intensity of the Vietnam War era.</p>
+        </div>
     </div>
 
-    <div style="padding: 20px">
-      <button class="btn" onclick="on()">Watch <span class="ribbon">NEW</span></button>
+    <div id="about" class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At JRC we make incredibly realistic games based on real life events, 
+                so far we have only made one game based on the Vietnam War. 
+                That game is called Jungle Rush, we started making Jungle Rush on August 3rd 2023, back when it was just a one-man team. 
+                Jungle Rush is an ultra realistic Vietnam War simulator. 
+                Jungle Rush features two teams, the Vietcong and the South Vietnamese, amazing graphics, high terrain detail, realistic gun models and animations featuring the iconic MP5 and AK-74, and more, pushing Roblox Studio to its limits. 
+                The iconic JRC logo is based on a real-life combat medal, with realistic colors.</p>
+        </div>
     </div>
-  </center>
 
-  <script>
-    function on() {
-      document.getElementById("overlay").style.display = "block";
-    }
 
-    function off() {
-      document.getElementById("overlay").style.display = "none";
-    }
-  </script>
-            <br><br><br><br><br><br><br><br><br>
-        </h1>
-        <br><br><br><br><br>
-        
-        <h2>
-            <center><b>Meet The Team</b>
-            <p class="helloo">Some call them the 'dream team', but  we just call them 'the developers'...</p></center>
-        </h2>
-    </body>
+
+
+
+
+<!--Staff-->
+    <div id="about" class="content-section">
+        <div class="container">
+            <h2>Meet The Team</h2>
+            <p>Some call them the 'dream team', but  we just call them 'the developers'...</p>
+        </div>
+    </div>
     
 <center>        
 <div class="card-container">
@@ -224,7 +145,7 @@ window.onload = function() {
     <img src="https://codehs.com/uploads/36e46be813ac1497223b492228c90ae9" alt="Avatar" style="width:300px;height:300px;">
     <h3>ComputerWiz541</h3>
     <p>Owner</p> 
-    <p>Owns and is the lead developer of JRC</p>
+    <p>Owns and is the lead developer for JRC</p>
     <p>"You can never have enough garage door openers"</p>
     </div>
         <div class="flip-card-back2">
@@ -233,22 +154,22 @@ window.onload = function() {
                 <h3>ComputerWiz541's Skills</h3>
 
                 <p>Scripting</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills2 html2">90%</div>
                 </div>
 
                 <p>Modeling</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills2 css2">75%</div>
                 </div>
 
                 <p>Graphics Design</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills2 js2">85%</div>
                 </div>
 
                 <p>Communication</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills2 php2">90%</div>
                 </div>
 
@@ -277,22 +198,22 @@ window.onload = function() {
                 <h3>Atom_Tester's Skills</h3>
 
                 <p>Scripting</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills1 html1">0%</div>
                 </div>
 
                 <p>Modeling</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills1 css1">30%</div>
                 </div>
 
                 <p>Graphics Design</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills1 js1">85%</div>
                 </div>
 
                 <p>Communication</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills1 php1">100%</div>
                 </div>
                 </body>
@@ -331,22 +252,22 @@ window.onload = function() {
                 <h3>Auslyt's Skills</h3>
 
                 <p>Scripting</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills3 html3">60%</div>
                 </div>
 
                 <p>Modeling</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills3 css3">25%</div>
                 </div>
 
                 <p>Graphics Design</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills3 js3">65%</div>
                 </div>
 
                 <p>Communication</p>
-                <div class="container">
+                <div class="staff_container">
                 <div class="skills3 php3">100%</div>
                 </div>
 
@@ -358,69 +279,56 @@ window.onload = function() {
 </div>
 </center>
 
-<center>
-    <p class="helloo">At JRC we make incredibly realistic games based on real life events, 
-    so far we have only made one game based on the Vietnam War. 
-    That game is called Jungle Rush, we started making Jungle Rush on August 3rd 2023, back when it was just a one-man team. 
-    Jungle Rush is an ultra realistic Vietnam War simulator. 
-    Jungle Rush features two teams, the Vietcong and the South Vietnamese, amazing graphics, high terrain detail, realistic gun models and animations featuring the iconic MP5 and AK-74, and more, pushing Roblox Studio to its limits. 
-    The iconic JRC logo is based on a real-life combat medal, with realistic colors.</p>
-</center>
 
-    <!-- Content of website -->
-    <div id="content">
-        <!-- Loaded content goes here -->
-    </div>
+<!--End Staff-->
+    
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Jungle Rush Community. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
-        const loaderWrapper = document.getElementById('loader-wrapper');
+        // Smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-        function showLoader() {
-            loaderWrapper.style.display = 'flex'; // Use flex to center the loader
-        }
-
-        function hideLoader() {
-            loaderWrapper.style.display = 'none';
-        }
-
-        function fetchData() {
-            showLoader();
-
-            setTimeout(function() {
-                hideLoader();
-                document.getElementById('content').innerHTML = '';
-            }, 2000); // 2-second delay
-        }
-
-        fetchData();
-    </script>
-<div id="background-sound"></div>
-    <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      // Create an audio context
-      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-
-      // Load the background sound (replace 'background-sound.mp3' with your sound file)
-      fetch('https://codehs.com/uploads/99d9891fbe1007543883d1df1363566d')
-        .then(response => response.arrayBuffer())
-        .then(buffer => audioContext.decodeAudioData(buffer))
-        .then(audioBuffer => {
-          // Create a buffer source node
-          const source = audioContext.createBufferSource();
-          source.buffer = audioBuffer;
-          source.loop = true; // Loop the background sound
-
-          // Connect the source node to the audio context's destination (speakers)
-          source.connect(audioContext.destination);
-
-          // Start playing the background sound
-          source.start();
-        })
-        .catch(error => {
-          console.error('Error loading background sound:', error);
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-  </script>
+    </script>
+    <script>
+        // Parallax scrolling
+        window.addEventListener('scroll', function () {
+            const offset = window.pageYOffset;
+            document.querySelector('.hero-section').style.backgroundPositionY = offset * 0.7 + 'px';
+        });
+    </script>
+    <!--<script>
+    // JavaScript code to scroll the page down by 475 pixels
+    window.onload = function() {
+      // Calculate the target position to scroll to
+      var targetPosition = window.scrollY + 475;
+
+      // Scroll down smoothly to the target position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    };
+  </script>-->
+
+
 </body>
 
 </html>
