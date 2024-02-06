@@ -232,10 +232,10 @@ body {
   color: white;
 }
 
-.html3 {width: 60%; background-color: #8B9D83;}
-.css3 {width: 25%; background-color: #6A7B76;}
-.js3 {width: 65%; background-color: #3A4E48;}
-.php3 {width: 100%; background-color: #1f1e33;}
+.html3 {width: 100%; background-color: #8B9D83;}
+.css3 {width: 65%; background-color: #6A7B76;}
+.js3 {width: 100%; background-color: #3A4E48;}
+.php3 {width: 90%; background-color: #1f1e33;}
 
 
 
@@ -366,7 +366,7 @@ body {
 
         .hero-section {
             position: relative;
-            background-image: url('https://codehs.com/uploads/26d338282a4313482b579cad6d7bf32b');
+            background-image: url('https://codehs.com/uploads/694ad7ead77fec594c1709682dcf2cdc');
             background-size: cover;
             background-position: center;
             text-align: center;
