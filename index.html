@@ -61,6 +61,8 @@ function closeModal() {
 }
 
 acceptButton.onclick = function() {
+  var audio = document.getElementById('myAudio2');
+  audio.play();
   if (acceptCheckbox.checked) {
     setAcceptanceCookie();
     closeModal();
@@ -82,12 +84,7 @@ window.onload = function() {
 <!-- End Modal -->
 
 <!-- Sounds -->
-<script>
-  setTimeout(function() {
-    var audio = document.getElementById('myAudio2');
-    audio.play();
-  }, 3000); // 3000 milliseconds = 3 seconds
-  </script>
+
 <script>
   setTimeout(function() {
     var audio = document.getElementById('myAudio');
